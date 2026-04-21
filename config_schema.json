@@ -1,0 +1,86 @@
+{
+  "project": {
+    "name": "string",
+    "authors": "string"
+  },
+  "boundary": {
+    "layer_id": "string",
+    "layer_name": "string",
+    "layer_source": "string"
+  },
+  "lulc_periods": [
+    {
+      "start_year": "int",
+      "start_layer_id": "string",
+      "start_layer_name": "string",
+      "start_layer_source": "string",
+      "end_year": "int",
+      "end_layer_id": "string",
+      "end_layer_name": "string",
+      "end_layer_source": "string",
+      "purpose": "TRAIN|VALIDATION"
+    }
+  ],
+  "predictors": {
+    "static": [
+      {
+        "name": "string",
+        "layer_id": "string",
+        "layer_name": "string",
+        "layer_source": "string",
+        "type": "static"
+      }
+    ],
+    "dynamic": [
+      {
+        "name": "string",
+        "year": "int",
+        "layer_id": "string",
+        "layer_name": "string",
+        "layer_source": "string",
+        "type": "dynamic"
+      }
+    ],
+    "dynamic_mapping_by_period": [
+      {
+        "period": "string",
+        "predictor_name": "string",
+        "requested_start_year": "int",
+        "selected_predictor_year": "int",
+        "selected_layer_name": "string",
+        "selected_layer_source": "string"
+      }
+    ]
+  },
+  "reclassification": {
+    "mode": "string",
+    "align_to_reference_grid": "bool",
+    "standard_scheme": "string"
+  },
+  "transitions": [
+    {
+      "enabled": "bool",
+      "from": "1-7",
+      "to": "1-7",
+      "label": "string",
+      "code": "x -> y"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "string",
+      "description": "string",
+      "enabled": "bool",
+      "transition_multipliers": {
+        "2 -> 4": "number"
+      }
+    }
+  ],
+  "target_years": [
+    2040
+  ],
+  "model_settings": {
+    "use_neighborhood": "bool",
+    "neighborhood_strength": "Low|Medium|High"
+  }
+}

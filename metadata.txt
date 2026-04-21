@@ -1,0 +1,14 @@
+[general]
+name=Predictor2026
+qgisMinimumVersion=3.0
+description=Transparent hybrid land use change plugin for QGIS with editable transitions, scenario management, and RF-based suitability modeling.
+version=10.7
+author=Nikola V. Djokic
+email=nikolavdjokic995@gmail.com
+about=Predictor2026 is a scenario-oriented hybrid LULC modeling plugin integrating CA-Markov and Random Forest methods with spatial neighborhood allocation and validation tools.
+category=Analysis
+icon=icon.png
+experimental=False
+deprecated=False
+hasProcessingProvider=False
+tags=lulc,landuse,landcover,ca-markov,randomforest,spatialmodeling,qgis
